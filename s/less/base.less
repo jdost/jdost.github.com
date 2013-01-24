@@ -1,0 +1,90 @@
+@import ".fonts";
+@import ".colors";
+@import "reset";
+
+body {
+  background: @light;
+  color: @dark;
+}
+a {
+  .sansserif();
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 0 solid auto;
+
+  -webkit-transition: border-bottom-width 0.3s ease-in-out;
+
+  &:hover { border-bottom-width: 1px; }
+}
+
+header {
+  .display();
+
+  float: left;
+  padding: 18px 55px 0;
+  text-align: center;
+
+  color: @dark;
+
+  h1 { font-size: 1.7em; }
+  span {
+    &.user { color: @yellow; }
+    &.divider { color: @cyan; }
+    &.site { color: @green; }
+    &.title { color: @orange; }
+  }
+}
+
+nav {
+  .display();
+
+  float: right;
+  padding: 15px 55px 5px 0;
+  text-align: right;
+
+  color: lighten(@dark, 25%);
+
+  a {
+    display: inline-block;
+    font-size: 0.75em;
+    margin: 0 5px;
+
+    -webkit-transition: color 0.3s ease-out;
+
+    &:hover {
+      color: darken(@dark, 15%);
+      text-decoration: none;
+    }
+    &:before {
+      font-family: FontAwesome;
+      font-size: 2em;
+      display: block;
+      text-align: center;
+    }
+
+    &[href="/"]:before { content: "\f015"; }
+    &[href^="/about"]:before { content: "\f007"; }
+    &[href*="github.com"]:before { content: "\f113"; }
+    &[href^="/projects"]:before { content: "\f109"; }
+    &[href^="/feed"]:before { content: "\f09e"; }
+  }
+}
+
+#body {
+  .serif();
+  clear: both;
+  position: relative;
+  border-top: solid 1px lighten(@dark, 50%);
+  margin: 15px 50px 0;
+  padding-top: 15px;
+}
+
+#body[alt^="about"] {
+  font-size: 1.2em;
+
+  h2 { margin: 15px 0; }
+  p { margin: 5px 20px 0; }
+}
+
+#body[alt^="projects"] {
+}

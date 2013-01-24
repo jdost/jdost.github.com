@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+   <title>{{ site.title }}</title>
+
+   <meta charset="utf-8">
+   <meta name="author" content="jdost" />
+
+   <link rel="stylesheet" href="/s/css/base.css">
+   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Rambla:400,700|Ubuntu+Mono|Domine:400,700">
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <header>
+      <h1>
+        <span class="user">{{ site.author }}</span>
+        <span class="divider">@</span>
+        <span class="site">{{ site.title }}</span>
+        {% if page.title %}
+        <span class="divider">:</span>
+        <span class="title">{{ page.title }}</span>
+        {% endif %}
+      </h1>
+   </header>
+   <nav>
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="http://github.com/jdost">Github</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/feed.xml">Feed</a>
+   </nav>
+   <div id="body" alt="{{ page.title }}">
+   {{ content }}
+   </div>
+</body>

@@ -1,0 +1,11 @@
+permalink: /:year/:month/:day/:title.html
+auto: true
+
+paginate: 3
+
+title: "jdost.github.com"
+author: "jdost"
+tagline: "writing about stuff"
+url: http://jdost.github.com
+
+exclude: ["Makefile", "README.md"]
