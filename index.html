@@ -7,7 +7,7 @@ home: true
 Just started this blog, have a lot to learn about Jekyll, this will probably keep a
 running log of my thoughts and what not.
 
-{% if not paginator.posts.empty? %}
+{% if paginator.total_pages %}
    <h3>Posts</h3>
 
    {% for post in paginator.posts %}
