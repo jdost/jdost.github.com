@@ -2,13 +2,15 @@
 layout: base
 home: true
 ---
-### Hello!
+<h3>Hello!</h3>
 
 Just started this blog, have a lot to learn about Jekyll, this will probably keep a
 running log of my thoughts and what not.
 
-### Posts
+{% if not paginator.posts.empty? %}
+   <h3>Posts</h3>
 
-{% for post in paginator %}
-  {{ post.title }}
-{% endfor %}
+   {% for post in paginator.posts %}
+      {{ post.title }}
+   {% endfor %}
+{% endif %}
