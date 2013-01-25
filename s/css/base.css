@@ -113,3 +113,11 @@ nav a[href^="/feed"]:before {
     float: none;
   }
 }
+@media screen and (max-device-width: 640px) {
+  header {
+    float: none;
+  }
+  nav {
+    float: none;
+  }
+}
