@@ -1,0 +1,6 @@
+#body[alt^="about"] {
+  font-size: 1.2em;
+}
+#body[alt^="about"] h2 {
+  margin: 15px 0;
+}

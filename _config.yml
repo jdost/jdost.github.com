@@ -8,4 +8,4 @@ author: "jdost"
 tagline: "writing about stuff"
 url: http://jdost.github.com
 
-exclude: ["Makefile", "README.md"]
+exclude: ["Makefile", "README.md", "s/less"]

@@ -1,10 +1,9 @@
 @import ".fonts";
 @import ".colors";
-@import "reset";
 
 body {
-  background: @light;
-  color: @dark;
+  background: @bg;
+  color: @fg;
 }
 a {
   .sansserif();
@@ -24,14 +23,17 @@ header {
   padding: 18px 55px 0;
   text-align: center;
 
-  color: @dark;
+  color: @fg;
 
   h1 { font-size: 1.7em; }
   span {
     &.user { color: @yellow; }
     &.divider { color: @cyan; }
     &.site { color: @green; }
-    &.title { color: @orange; }
+    &.title {
+      color: @orange;
+      text-transform: lowercase;
+    }
   }
 }
 
@@ -40,9 +42,9 @@ nav {
 
   float: right;
   padding: 15px 55px 5px 0;
-  text-align: right;
+  text-align: center;
 
-  color: lighten(@dark, 25%);
+  color: lighten(@fg, 45%);
 
   a {
     display: inline-block;
@@ -51,15 +53,17 @@ nav {
 
     -webkit-transition: color 0.3s ease-out;
 
-    &:hover {
-      color: darken(@dark, 15%);
+    &:hover, &.selected {
+      color: darken(@fg, 15%);
       text-decoration: none;
     }
+    &.selected:hover { cursor: default; }
     &:before {
       font-family: FontAwesome;
       font-size: 2em;
       display: block;
       text-align: center;
+      color: lighten(@fg, 25%);
     }
 
     &[href="/"]:before { content: "\f015"; }
@@ -74,17 +78,24 @@ nav {
   .serif();
   clear: both;
   position: relative;
-  border-top: solid 1px lighten(@dark, 50%);
+  border-top: solid 1px lighten(@fg, 50%);
   margin: 15px 50px 0;
   padding-top: 15px;
+
+  p {
+    margin: 10px 0 0;
+
+    &:first-line { text-indent: 10em; }
+  }
 }
 
-#body[alt^="about"] {
-  font-size: 1.2em;
-
-  h2 { margin: 15px 0; }
-  p { margin: 5px 20px 0; }
+@media screen and (min-width: 1024px) {
+  body {
+    width: 1024px;
+    margin: 0 auto;
+  }
 }
-
-#body[alt^="projects"] {
+@media screen and (max-width: 750px) {
+  header { float: none; }
+  nav { float: none; }
 }
