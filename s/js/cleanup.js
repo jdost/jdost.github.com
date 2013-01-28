@@ -10,3 +10,18 @@ window.addEventListener("load", function () {
     }
   }
 });
+
+window.addEventListener("load", function () {
+  var post = document.getElementById("body");
+  if (post.className.indexOf("post") === -1) { return; }
+
+  var vis = false,
+    tldr = post.getElementsByClassName("tldr")[0];
+  tldr.addEventListener("click", function () {
+    console.log(tldr.nextSibling);
+    if (vis) { tldr.nextSibling.className = ""; }
+    else { tldr.nextSibling.className = "visible"; }
+    vis = !vis;
+  });
+});
+

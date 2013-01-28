@@ -21,12 +21,24 @@
    </header>
    <nav>
       <a href="/"><label>Home</label></a>
+      {% if site.posts %}<a href="/blog/index.html"><label>Posts</label></a>{% endif %}
       <a href="/about.html"><label>About</label></a>
       <a href="http://github.com/jdost"><label>Github</label></a>
       <a href="/projects.html"><label>Projects</label></a>
       <a href="/feed.xml"><label>Feed</label></a>
    </nav>
-   <div id="body" alt="{{ page.title }}">
+   {% if page.post %} <div id="body" class="post paged">
+   {% else %} <div id="body" alt="{{ page.title }}"
+      {% if page.paged %} class="paged"{% endif %}
+      >
+   {% endif %}
+
    {{ content }}
+
+   {% if page.paged %}{% include pager.html %}{% endif %}
    </div>
+
+   {% if page.footer %}{% include footer.html %}{% endif %}
+
+   {% include analytics.html %}
 </body>

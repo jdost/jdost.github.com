@@ -1,0 +1,15 @@
+{% if site.disqus.enabled %}
+<!-- Disqus comments -->
+<section class="comments">
+   <div id="disqus_thread"></div>
+   <script type="text/javascript">
+      (function (dsq_name) {
+         var dsq = document.createElement("script");
+         dsq.type = "text/javascript";
+         dsq.async = true;
+         dsq.src = "http://" + dsq_name + ".disqus.com/embed.js";
+         (document.getElementsByTagName('head')[0] || document.body).appendChild(dsq);
+      }('{{ site.disqus.account }}'));
+   </script>
+</section>
+{% endif %}

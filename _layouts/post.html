@@ -1,5 +1,26 @@
 ---
 layout: base
+post: true
+paged: true
+footer: false
 ---
+{% if page.tldr %}
+<a class="tldr">tl;dr</a><div>{{ page.tldr }}</div>
+{% endif %}
+
 {{ content }}
 
+{% if site.related_posts.length > 0 %}
+<!-- Related posts -->
+<ul class="posts">
+   <h3>Related Posts</h3>
+   {% for post in site.related_posts[0..2] %}
+   <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <time>{{ post.date | date_to_string }}</time>
+   </li>
+   {% endfor %}
+</ul>
+{% endif %}
+
+{% if page.comments %} {% include disqus.html %} {% endif %}

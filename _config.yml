@@ -1,7 +1,7 @@
 permalink: /:year/:month/:day/:title.html
 auto: true
 
-paginate: 3
+paginate: 2
 
 title: "jdost.github.com"
 author: "jdost"
@@ -10,3 +10,10 @@ url: http://jdost.github.com
 
 exclude: ["Makefile", "README.md", "s/less"]
 pygments: true
+
+disqus:
+   enabled: true
+   account: jdost
+analytics:
+   enabled: false
+   account: UA-37975007-1

@@ -1,0 +1,22 @@
+<!-- Paged content navigation -->
+<section id="pager">
+{% if paginator %}
+   {% if paginator.previous_page %} <a href="/page{{paginator.previous_page}}" class="prev">Previous</a>
+   {% else %} <span class="prev">Previous</span> {% endif %}
+
+   <span class="info">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
+
+   {% if paginator.next_page %} <a href="/page{{paginator.next_page}}" class="next ">Next</a>
+   {% else %} <span class="next ">Next</span> {% endif %}
+{% else %}
+   {% if page.previous %}
+      <a href="{{ page.previous.url }}" class="prev">{{ page.previous.title }}</a>
+   {% endif %}
+
+   <span class="info">{{ page.title }}</span>
+
+   {% if page.next %}
+      <a href="{{ page.next.url }}" class="next">{{ page.next.title }}</a>
+   {% endif %}
+{% endif %}
+</section>
