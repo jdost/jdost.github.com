@@ -1,5 +1,5 @@
 deploy: compile
-	git push origin remote
+	git push
 
 compile:
 	lessc ./s/less/base.less ./s/css/base.css
