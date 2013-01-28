@@ -18,7 +18,6 @@ window.addEventListener("load", function () {
   var vis = false,
     tldr = post.getElementsByClassName("tldr")[0];
   tldr.addEventListener("click", function () {
-    console.log(tldr.nextSibling);
     if (vis) { tldr.nextSibling.className = ""; }
     else { tldr.nextSibling.className = "visible"; }
     vis = !vis;
