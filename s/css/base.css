@@ -137,13 +137,13 @@ footer {
 .highlight pre {
   padding: 5px;
 }
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (min-device-width: 1024px) {
   body {
     width: 1024px;
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
   header,
   nav {
     float: none;
@@ -151,11 +151,19 @@ footer {
     padding-right: 0;
   }
 }
-@media screen and (max-device-width: 640px) {
+@media only screen and (max-device-width: 640px) {
   header,
   nav {
+    font-size: 2em;
     float: none;
     padding-left: 0;
     padding-right: 0;
+  }
+  nav a:before {
+    display: none;
+  }
+  nav a label {
+    font-size: 2em;
+    display: inline;
   }
 }
