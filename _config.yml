@@ -15,5 +15,5 @@ disqus:
    enabled: true
    account: jdost
 analytics:
-   enabled: false
+   enabled: true
    account: UA-37975007-1
