@@ -159,11 +159,4 @@ footer {
     padding-left: 0;
     padding-right: 0;
   }
-  nav a:before {
-    display: none;
-  }
-  nav a label {
-    font-size: 2em;
-    display: inline;
-  }
 }

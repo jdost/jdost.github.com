@@ -50,6 +50,9 @@
   margin: 15px 0 0;
   padding-top: 15px;
 }
+code {
+  letter-spacing: 0em;
+}
 @media screen and (max-width: 1024px) {
   section#pager {
     margin: 0 auto;
