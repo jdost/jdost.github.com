@@ -17,7 +17,7 @@ through the source to understand.  But the most important part of all of this is
 that the project needs to be structured sanely.
 
 When I checkout a project and I am looking for a particular piece of information,
-like the source of the [`Generator`][1] class for Jekyll when I am working on a
+like the source of the [generator][1] class for Jekyll when I am working on a
 plugin (tip: the [docs][2] for writing plugins is really weak).  When looking for
 the file, I open up the repo and should be able to understand where the source
 **should** be (it exists in `/lib/jekyll/generator.rb`).  If it were located under
