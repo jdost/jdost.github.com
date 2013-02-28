@@ -1,11 +1,13 @@
-deploy: compile
+deploy: less
 	git push
 
-compile:
-	lessc ./s/less/base.less ./s/css/base.css
-	lessc ./s/less/reset.less ./s/css/reset.css
-	lessc ./s/less/misc.less ./s/css/misc.css
-	lessc ./s/less/posts.less ./s/css/posts.css
+compile: less
+	jekyll
+
+less:
+	for file in $(basename $(notdir $(wildcard ./s/less/*.less))); do \
+		lessc ./s/less/$${file}.less ./s/css/$${file}.css; \
+	done;
 
 serve:
 	jekyll --server --auto
