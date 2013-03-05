@@ -48,7 +48,12 @@
     }
   }
 
-  p a { font-variant: small-caps; }
+  p a {
+    font-variant: small-caps;
+    border-bottom: solid 1px lighten(@fg, 10%);
+    -webkit-transition: border-bottom-color 0.3s ease-in-out;
+    &:hover { border-bottom-color: @bg; }
+  }
 
   #disqus_thread {
     border-top: solid 1px lighten(@fg, 50%);

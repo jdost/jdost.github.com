@@ -47,6 +47,12 @@
 #body.post p a,
 #body[alt="posts"] p a {
   font-variant: small-caps;
+  border-bottom: solid 1px #525252;
+  -webkit-transition: border-bottom-color 0.3s ease-in-out;
+}
+#body.post p a:hover,
+#body[alt="posts"] p a:hover {
+  border-bottom-color: #dedede;
 }
 #body.post #disqus_thread,
 #body[alt="posts"] #disqus_thread {

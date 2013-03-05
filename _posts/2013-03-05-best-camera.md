@@ -16,7 +16,7 @@ anyone (myself included) the best one at the moment is the one that I can use.  
 me, this has always meant that shipping is one of the most important features of a
 project.
 
-[Nikon D3000]: http:///
+[Nikon D3000]: http://en.wikipedia.org/wiki/Nikon_D3000
 
 For a project, getting it to the point of MVP, or **M**inimum **V**iable 
 **P**roduct, should be the number 1 goal.  For my side projects, I go through the
