@@ -21,6 +21,10 @@
   content: "";
   clear: both;
 }
+#body.post ol,
+#body[alt="posts"] ol {
+  list-style: decimal inside;
+}
 #body.post a.tldr,
 #body[alt="posts"] a.tldr {
   display: inline-block;

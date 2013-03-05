@@ -106,12 +106,14 @@ footer {
   line-height: 1.5em;
   font-size: 1.1em;
 }
-#body p {
+#body p,
+#body ol {
   margin: 0 1.5em 1em;
   color: #525252;
   letter-spacing: 0.07em;
 }
-#body p  + p {
+#body p  + p,
+#body ol  + p {
   margin-top: 1em;
 }
 #body h1,
