@@ -28,7 +28,8 @@
       <a href="/feed.xml"><label>Feed</label></a>
    </nav>
    {% if page.post %} <div id="body" class="post paged">
-   {% else %} <div id="body" alt="{{ page.title }}"
+   {% else %} <div id="body"
+      {% if paginator.previous_page %}alt="posts"{% else %}alt="{{ page.title }}"{% endif %}
       {% if page.paged %} class="paged"{% endif %}
       >
    {% endif %}
