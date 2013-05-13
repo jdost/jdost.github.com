@@ -1,5 +1,4 @@
 permalink: /:year/:month/:day/:title.html
-auto: false
 
 paginate: 2
 
