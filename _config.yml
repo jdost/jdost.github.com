@@ -2,12 +2,12 @@ permalink: /:year/:month/:day/:title.html
 
 paginate: 2
 
-title: "jdost.github.com"
+title: "jdost.github.io"
 author: "jdost"
 tagline: "writing about stuff"
-url: http://jdost.github.com
+url: http://jdost.github.io
 
-exclude: ["Makefile", "README.md", "s/less"]
+exclude: ["Makefile", "README.md", "github.conf", "s/less"]
 pygments: true
 
 disqus:
