@@ -6,7 +6,7 @@ deploy: less
 
 less:
 	for file in $(basename $(notdir $(wildcard ./s/less/*.less))); do \
-		lessc ./s/less/$${file}.less ./s/css/$${file}.css; \
+		lessc ./s/less/$${file}.less > ./s/css/$${file}.css; \
 	done;
 
 serve:
