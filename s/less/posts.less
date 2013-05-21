@@ -55,15 +55,33 @@
     &:hover { border-bottom-color: @bg; }
   }
 
+  p a[href^='#'] {
+    font-variant: normal;
+  }
+
   #disqus_thread {
     border-top: solid 1px lighten(@fg, 50%);
     margin: 15px 0 0;
     padding-top: 15px;
   }
+
+  .highlight code {
+    font-weight: normal;
+    background: inherit;
+    border: 0;
+    padding: 0;
+  }
+
+  code {
+    background: darken(@bg, 5%);
+    border: dotted 1px lighten(@fg, 25%);
+    padding: 2px;
+  }
 }
 
 code {
   letter-spacing: 0em;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1024px) {

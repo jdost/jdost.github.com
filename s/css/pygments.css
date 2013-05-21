@@ -66,5 +66,8 @@
 .highlight div .gd .x,
 .highlight div .gi,
 .highlight div .gi .x{display:inline-block;width:100%}
+.highlight .lineno{ background-color:#1E4D59;margin-left: -5px;padding-left: 5px; padding-right: 3px; }
+.highlight code > .emphasize { background-color: #175662; display: block; }
+.highlight code > span { -webkit-transition: background-color 250ms ease-in 50ms; display: block; }
 
 pre { line-height: 1em; }
