@@ -34,14 +34,14 @@
   font-weight: bold;
   cursor: pointer;
 }
-#body.post a.tldr  + div,
-#body[alt="posts"] a.tldr  + div {
+#body.post a.tldr + div,
+#body[alt="posts"] a.tldr + div {
   opacity: 0.0;
   display: inline-block;
   -webkit-transition: opacity 0.7s ease-in;
 }
-#body.post a.tldr  + div.visible,
-#body[alt="posts"] a.tldr  + div.visible {
+#body.post a.tldr + div.visible,
+#body[alt="posts"] a.tldr + div.visible {
   opacity: 1.0;
 }
 #body.post p a,

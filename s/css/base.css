@@ -112,8 +112,8 @@ footer {
   color: #525252;
   letter-spacing: 0.07em;
 }
-#body p  + p,
-#body ol  + p {
+#body p + p,
+#body ol + p {
   margin-top: 1em;
 }
 #body h1,
