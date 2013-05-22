@@ -39,17 +39,21 @@ window.addEventListener("load", function () {
       var href = l.getAttribute("href").substr(1);
 
       var id = href.substr(0, href.indexOf('-'));
-      var range = href.substr(href.indexOf('-') + 1);
-      if (range.indexOf(':') === -1) {
-        range = [parseInt(range, 10)];
-      } else {
-        var start = parseInt(range.substr(0, range.indexOf(':')), 10),
-          end = parseInt(range.substr(range.indexOf(':') + 1), 10);
-
+      var ranges = href.substr(href.indexOf('-') + 1) + ",",
         range = [];
+      while (ranges.indexOf(",") !== -1) {
+        var current = ranges.substr(0, ranges.indexOf(","));
+        ranges = ranges.substr(ranges.indexOf(",") + 1);
 
-        for (start; start <= end; start++) {
-          range.push(start);
+        if (current.indexOf(':') === -1) {
+          range.push(parseInt(current, 10));
+        } else {
+          var start = parseInt(current.substr(0, current.indexOf(':')), 10),
+            end = parseInt(current.substr(current.indexOf(':') + 1), 10);
+
+          for (start; start <= end; start++) {
+            range.push(start);
+          }
         }
       }
 
