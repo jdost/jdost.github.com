@@ -26,7 +26,7 @@ window.addEventListener("load", function () {
 
 window.addEventListener("load", function () {
   var article = document.getElementById("body");
-  if (article.className.indexOf("post") === -1) { return; }
+  //if (article.className.indexOf("post") === -1) { return; }
 
   var links = article.getElementsByTagName("a");
   for (var i = 0, l = links.length; i < l; i++) {

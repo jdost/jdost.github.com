@@ -1,120 +1,181 @@
 body {
-  background: #dedede;
-  color: #383838;
-  font-size: 16px;
+  background: #f0f0f0;
 }
-a {
-  font-family: 'Rambla', sans-serif;
+header {
+  margin-top: 2em;
+  margin-bottom: 7px;
+}
+header a {
   color: inherit;
   text-decoration: none;
+}
+header h1 {
+  margin: 0;
+  padding-bottom: 7px;
+  padding-left: 35px;
+  border-bottom: 1px solid #252525;
+  font-family: "Open Sans", sans-serif;
+}
+header nav {
+  margin-top: 15px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.2em;
+}
+header nav > a {
+  display: block;
+  border-bottom: 2px solid #252525;
+  vertical-align: bottom;
+  margin: 0 0 0 2px;
+  padding: 0 17px 7px;
+  -webkit-transition: border-bottom-width 150ms, padding-bottom 150ms;
+  -moz-transition: border-bottom-width 150ms, padding-bottom 150ms;
+  transition: border-bottom-width 150ms, padding-bottom 150ms;
+}
+header nav > a label {
+  cursor: pointer;
+}
+header nav > a:before {
+  font-family: FontAwesome;
+  font-size: 0;
+  display: block;
+}
+header nav > a[href="/"]:before {
+  content: "\f015";
+}
+header nav > a[href^="/projects.html"]:before {
+  content: "\f121";
+}
+header nav > a[href^="/about"]:before {
+  content: "\f129";
+}
+header nav > a[href$="github.com/"]:before {
+  content: "\f113";
+}
+header nav > a:hover {
+  padding-bottom: 5px;
+  border-bottom-width: 4px;
+}
+header nav:after {
+  display: block;
+  margin: 0  0 0 2px;
+  width: 30px;
+  content: "";
+  border-bottom: 1px solid #252525;
+}
+header:after {
+  display: table;
+  content: "";
+  clear: both;
 }
 code {
   font-family: 'Ubuntu Mono', monospace;
 }
-header {
-  font-family: 'Rambla', sans-serif;
-  float: left;
-  padding: 18px 0 0 55px;
-  text-align: center;
-  color: #383838;
+.flexbox header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
 }
-header h1 {
-  font-size: 1.7em;
+.flexbox header h1 {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
 }
-header span.user {
-  color: #b58900;
+.flexbox header nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
 }
-header span.divider {
-  color: #2aa198;
+.no-flexbox header {
+  position: relative;
 }
-header span.site {
-  color: #859900;
+.no-flexbox header h1 {
+  width: 100%;
+  padding-left: 0;
+  text-indent: 35px;
 }
-header span.title {
-  color: #cb4b16;
+.no-flexbox header nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #f0f0f0;
+  padding-left: 2px;
+}
+.no-flexbox header nav > a {
   display: inline-block;
-  text-transform: lowercase;
+  margin: 0 -1px;
 }
-nav {
-  font-family: 'Rambla', sans-serif;
-  float: right;
-  padding: 15px 55px 5px 0;
-  text-align: center;
-  color: #ababab;
-}
-nav a {
+.no-flexbox header nav:after {
   display: inline-block;
-  font-size: 0.75em;
-  margin: 0 5px;
-  -webkit-transition: color 0.3s ease-in-out;
+  margin-left: -2px;
+  vertical-align: bottom;
 }
-nav a:hover,
-nav a.selected {
-  color: #121212;
+#social {
+  position: static;
+  bottom: 2em;
+  right: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#social li {
+  display: inline;
+}
+#social h6 {
+  line-height: 1.5em;
+  font-size: 0.9em;
+  display: inline;
+}
+#social a {
+  display: inline-block;
   text-decoration: none;
+  opacity: 0.4;
+  -webkit-transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  -ms-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
-nav a:hover:before,
-nav a.selected:before {
-  color: #121212;
-}
-nav a.selected:hover {
-  cursor: default;
-}
-nav a:before {
-  font-family: FontAwesome;
-  font-size: 2.5em;
-  display: block;
-  text-align: center;
-  color: #787878;
-}
-nav a label {
+#social a label {
   display: none;
 }
-nav a[href="/"]:before {
-  content: "\f015";
+#social a:hover {
+  opacity: 1;
 }
-nav a[href^="/blog"]:before {
-  content: "\f02d";
+#social a:after,
+#social a:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 1.5em;
 }
-nav a[href^="/about"]:before {
-  content: "\f007";
+#social a[href*="twitter.com"]:after {
+  content: "\f099";
+  color: #00aced;
 }
-nav a[href*="github.com"]:before {
-  content: "\f113";
+#social a[href*="github.com"]:after {
+  content: "\f09b";
+  color: #252525;
 }
-nav a[href^="/projects"]:before {
-  content: "\f109";
+#social a[href*="flickr.com"] {
+  font-size: 0.5em;
+  padding: 1em inherit;
 }
-nav a[href^="/feed"]:before {
-  content: "\f09e";
+#social a[href*="flickr.com"]:after {
+  content: "\f111";
+  color: #ff0084;
 }
-nav a[href^="/feed"]:hover:before {
-  color: #cb4b16;
+#social a[href*="flickr.com"]:before {
+  content: "\f111";
+  color: #0063dc;
 }
-footer {
-  border-top: solid 1px #b8b8b8;
-  margin: 15px 50px 0;
-  padding-top: 5px;
+#social a[href*="plus.google.com"]:after {
+  content: "\f0d4";
+  color: #d34826;
 }
 #body {
-  font-family: 'Domine', serif;
-  clear: both;
-  position: relative;
-  border-top: solid 1px #b8b8b8;
-  margin: 15px 50px 0;
-  padding-top: 15px;
-  line-height: 1.5em;
+  color: #181818;
+  letter-spacing: 0.13em;
+  font-family: "PT Serif", serif;
   font-size: 1.1em;
-}
-#body p,
-#body ol {
-  margin: 0 1.5em 1em;
-  color: #525252;
-  letter-spacing: 0.07em;
-}
-#body p + p,
-#body ol + p {
-  margin-top: 1em;
 }
 #body h1,
 #body h2,
@@ -122,43 +183,177 @@ footer {
 #body h4,
 #body h5,
 #body h6 {
-  color: #000000;
-  margin: 1em 1em 0;
-  font-weight: bold;
+  color: #323232;
+  margin: 0.2em 0;
+}
+#body h1 a,
+#body h2 a,
+#body h3 a,
+#body h4 a,
+#body h5 a,
+#body h6 a {
+  text-decoration: none;
+  color: inherit;
+}
+#body code {
+  font-family: monospace;
+  background: #d7d7d7;
+  padding: 0.15em 0.2em;
+}
+#body ol,
+#body ul {
+  margin: 0.5em 2em;
+  padding: 0 0 0 1.5em;
 }
 #body a {
-  -webkit-transition: color 0.3s ease-in-out;
+  color: #22229c;
+  text-decoration: underline;
+  letter-spacing: 0.09em;
+  -webkit-transition: color 200ms ease-in-out;
+  -moz-transition: color 200ms ease-in-out;
+  -ms-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
 }
 #body a:hover {
-  color: #000000;
+  color: #3737d3;
 }
-.highlight {
-  font-family: 'Ubuntu Mono', monospace;
-  margin: 10px 0;
+#body em {
+  letter-spacing: 0.1em;
 }
-.highlight pre {
-  padding: 5px;
+#body strong {
+  letter-spacing: 0.1em;
 }
-@media only screen and (min-width: 1024px) and (min-device-width: 1024px) {
-  body {
-    width: 1024px;
-    margin: 0 auto;
+#body hr {
+  padding: 0;
+  margin: 3px 3em;
+  border: none;
+  border-top: medium double #656565;
+  text-align: center;
+}
+#body hr:after {
+  content: "\2767";
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 1em;
+  background: #f0f0f0;
+  padding: 0 0 0 0.1em;
+}
+#body blockquote {
+  font-style: italic;
+  margin: 1em;
+  padding: 0.3em 0.5em;
+  background: #e3e3e3;
+  border-left: 0.3em solid #bdbdbd;
+}
+#body p {
+  padding: 0 1.5em;
+}
+footer {
+  border-top: 1px solid #252525;
+  margin-top: 7px;
+  padding-top: 7px;
+  font-family: "PT Sans", sans-serif;
+}
+footer .credits {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+footer .credits li,
+footer .credits h6 {
+  font-size: 0.7em;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 800px + 90) and (min-device-width: 800px + 90) {
+  #social {
+    position: fixed;
+    padding: 0 5px 5px;
+    text-align: right;
+  }
+  #social a:before,
+  #social a:after {
+    font-size: 3em;
+  }
+  #social h6 {
+    display: none;
+  }
+  #social a {
+    display: block;
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (min-width: 800px) and (min-device-width: 800px) {
   header,
-  nav {
-    float: none;
+  #body,
+  footer {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
+  header {
+    margin: 5px 45px 15px;
+    display: block;
+    border-bottom: 1px solid #252525;
+    padding-bottom: 9px;
+  }
+  header h1 {
+    border-bottom: 0;
+    text-align: center;
+    padding-bottom: 0;
     padding-left: 0;
-    padding-right: 0;
+    margin-left: 0;
+    font-size: 4.5em;
   }
-}
-@media only screen and (max-device-width: 640px) {
-  header,
-  nav {
+  header nav {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    margin-top: 2px;
+  }
+  header nav:after {
+    display: none;
+    width: 0;
+  }
+  header nav > a {
+    padding: 3px 8px;
+    margin: 0;
+    border: 0;
+    color: #656565;
+    -webkit-transition: color 150ms ease-in-out;
+    -moz-transition: color 150ms ease-in-out;
+    -ms-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+  }
+  header nav > a label {
+    display: none;
+  }
+  header nav > a:before {
     font-size: 2em;
-    float: none;
-    padding-left: 0;
-    padding-right: 0;
+  }
+  header nav > a:hover {
+    border: 0;
+    margin: 0;
+    color: #252525;
+  }
+  .no-flexbox {
+    position: relative;
+  }
+  footer {
+    margin: 15px 45px;
+  }
+  #social h6 {
+    display: none;
+  }
+  #social a {
+    padding: 0 8px;
+  }
+  #social a:after,
+  #social a:before {
+    font-size: 2em;
   }
 }
