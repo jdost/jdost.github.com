@@ -37,10 +37,10 @@ don't have to figure out weird bugs with having nginx start doing the static hos
 when you move into prod or teach everyone how to setup nginx and write a virtual
 host config.  All of the headache is gone.
 
-[VirtualBox]:
-[mongodb]:
-[nginx]:
-[supervisord]:
+[VirtualBox]: https://en.wikipedia.org/wiki/VirtualBox
+[mongodb]: http://www.mongodb.org/
+[nginx]: http://wiki.nginx.org/Main
+[supervisord]: http://supervisord.org/
 
 For the provisioning, I am using [puppet][], which is a very powerful tool for
 uniformly setting up machines for a specific environment.  With puppet, I have it
@@ -58,11 +58,11 @@ practices and created a user that is used for running the application.  Finally 
 application is added to the supervisord and nginx services so that they now handle
 starting it up as a daemon and hosting it via a proper web server.
 
-[puppet]:
-[class]:
-[module]:
-[1]:
-[Vagrantfile]:
+[puppet]: http://en.wikipedia.org/wiki/Puppet_(software)
+[class]: https://github.com/jdost/workhammer/blob/master/manifests/modules/nginx/manifests/vhost.pp
+[module]: https://github.com/jdost/workhammer/tree/master/manifests/modules/nginx
+[1]: https://github.com/jdost/workhammer/blob/master/manifests/default.pp
+[Vagrantfile]: http://docs.vagrantup.com/v2/vagrantfile/
 
 With all of this work, I can easily spin up a new development environment with the
 `vagrant up` command (I did yesterday when creating a box to demo the code) and if

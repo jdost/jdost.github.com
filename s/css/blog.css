@@ -1,0 +1,150 @@
+#body hgroup {
+  position: relative;
+}
+#body hgroup h1,
+#body hgroup h2,
+#body hgroup h3,
+#body hgroup h4,
+#body hgroup h5,
+#body hgroup h6 {
+  text-transform: capitalize;
+}
+#body hgroup time {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+  color: #656565;
+}
+#body .flickr {
+  display: block;
+  text-align: center;
+}
+#body ul.related li time {
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -ms-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+  opacity: 0;
+  font-size: 0.8em;
+}
+#body ul.related li:hover time {
+  opacity: 0.8;
+}
+#body ul.tags {
+  text-align: right;
+  list-style: none;
+}
+#body ul.tags li {
+  display: inline;
+}
+#body ul.tags li:not(:last-child):after {
+  content: ",";
+}
+#body .content p {
+  text-indent: 2em;
+}
+#body .content p:first-child {
+  text-indent: 0;
+}
+#body .content p:first-child:first-letter {
+  float: left;
+  font-size: 3em;
+  line-height: 0.8em;
+  padding-right: 0.1em;
+}
+#body .highlight code {
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: normal;
+  background: inherit;
+  border: 0;
+  padding: 0;
+}
+#body code {
+  letter-spacing: 0;
+  font-weight: bold;
+  background: #e3e3e3;
+  border: dotted 1px #656565;
+  padding: 2px;
+}
+#pager {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  width: 100%;
+}
+#pager span,
+#pager a {
+  display: block;
+}
+#pager a:before,
+#pager a:after {
+  font-family: FontAwesome;
+}
+#pager .prev {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+}
+#pager a.prev:before {
+  content: "\f104" " ";
+}
+#pager .next {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+}
+#pager a.next:after {
+  content: " " "\f105";
+}
+.no-flexbox #pager .prev {
+  float: left;
+}
+.no-flexbox #pager .next {
+  float: right;
+}
+.rating {
+  display: inline;
+}
+.rating:before {
+  content: "Rating:";
+}
+.rating:after {
+  color: #AA3;
+  font-family: FontAwesome;
+}
+.rating[stars="0"]:after {
+  content: "\f006 \f006 \f006 \f006 \f006";
+}
+.rating[stars="0.5"]:after {
+  content: "\f123 \f006 \f006 \f006 \f006";
+}
+.rating[stars="1"]:after {
+  content: "\f005 \f006 \f006 \f006 \f006";
+}
+.rating[stars="1.5"]:after {
+  content: "\f005 \f123 \f006 \f006 \f006";
+}
+.rating[stars="2"]:after {
+  content: "\f005 \f005 \f006 \f006 \f006";
+}
+.rating[stars="2.5"]:after {
+  content: "\f005 \f005 \f123 \f006 \f006";
+}
+.rating[stars="3"]:after {
+  content: "\f005 \f005 \f005 \f006 \f006";
+}
+.rating[stars="3.5"]:after {
+  content: "\f005 \f005 \f005 \f123 \f006";
+}
+.rating[stars="4"]:after {
+  content: "\f005 \f005 \f005 \f005 \f006";
+}
+.rating[stars="4.5"]:after {
+  content: "\f005 \f005 \f005 \f005 \f123";
+}
+.rating[stars="5"]:after {
+  content: "\f005 \f005 \f005 \f005 \f005";
+}

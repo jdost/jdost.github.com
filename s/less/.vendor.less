@@ -1,0 +1,31 @@
+.transform(@params : all) {
+  -webkit-transform: @params;
+     -moz-transform: @params;
+      -ms-transform: @params;
+          transform: @params;
+}
+
+.transition(@prop : all, @duration : 0.5s, @pattern : ease-in-out) {
+  -webkit-transition: @prop @duration @pattern;
+     -moz-transition: @prop @duration @pattern;
+      -ms-transition: @prop @duration @pattern;
+          transition: @prop @duration @pattern;
+}
+
+.box() {
+  display: -webkit-box;
+  display:    -moz-box;
+  display:         box;
+}
+
+.box-flex(@val : 1) {
+  -webkit-box-flex: @val;
+     -moz-box-flex: @val;
+          box-flex: @val;
+}
+
+.box-pack(@type : stretch) {
+  -webkit-box-pack: @type;
+     -moz-box-pack: @type;
+          box-pack: @type;
+}

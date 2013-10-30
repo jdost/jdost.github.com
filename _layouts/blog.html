@@ -1,0 +1,25 @@
+---
+layout: base
+title: posts
+styles: [blog]
+---
+{% for post in paginator.posts %}
+<article>
+   <hgroup>
+      <time>{{ post.date | date_to_string }}</time>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+   </hgroup>
+   <section class="content">
+      {{ post.content }}
+      <ul class="tags">
+         tagged with:
+         {% for tag in post.tags %}
+         <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
+         {% endfor %}
+      </ul>
+   </section>
+</article>
+{% if forloop.index < forloop.length %}
+<hr />
+{% endif %}
+{% endfor %}

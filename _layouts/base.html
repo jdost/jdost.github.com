@@ -1,45 +1,27 @@
 <!doctype html>
 <head>
-   <title>{{ site.title }}</title>
+   <title>{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}</title>
 
    {% include meta.html %}
    {% include styles.html %}
    {% include scripts.html %}
 </head>
-
 <body>
    <header>
-      <h1>
-        <span class="user">{{ site.author }}</span>
-        <span class="divider">@</span>
-        <span class="site">{{ site.title }}</span>
-        {% if page.title %}
-        <span class="divider">:</span>
-        <span class="title">{{ page.title }}</span>
-        {% endif %}
-      </h1>
+      <h1><a href="/">{{ site.title }}</a></h1>
+      <nav>
+         <a href="/"><label>home</label></a>
+         <a href="http://github.com/jdost" class="github"><label>profile</label></a>
+         <a href="/projects.html" class="projects"><label>projects</label></a>
+         <a href="/about.html" class="about"><label>about</label></a>
+      </nav>
    </header>
-   <nav>
-      <a href="/"><label>Home</label></a>
-      {% if site.posts %}<a href="/blog/index.html"><label>Posts</label></a>{% endif %}
-      <a href="/about.html"><label>About</label></a>
-      <a href="http://github.com/jdost"><label>Github</label></a>
-      <a href="/projects.html"><label>Projects</label></a>
-      <a href="/feed.xml"><label>Feed</label></a>
-   </nav>
-   {% if page.post %} <div id="body" class="post paged">
-   {% else %} <div id="body"
-      {% if paginator.previous_page %}alt="posts"{% else %}alt="{{ page.title }}"{% endif %}
-      {% if page.paged %} class="paged"{% endif %}
-      >
-   {% endif %}
 
-   {{ content }}
+   <section id="body">
+   <!-- Body -->
+{{ content }}
+   </section>
 
-   {% if page.paged %}{% include pager.html %}{% endif %}
-   </div>
-
-   {% if page.footer %}{% include footer.html %}{% endif %}
-
+   {% include footer.html %}
    {% include analytics.html %}
 </body>

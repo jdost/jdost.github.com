@@ -2,7 +2,7 @@ permalink: /:year/:month/:day/:title.html
 
 paginate: 2
 
-title: "jdost.github.io"
+title: "jdost"
 author: "jdost"
 tagline: "writing about stuff"
 url: http://jdost.github.io
