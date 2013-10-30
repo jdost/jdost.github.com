@@ -21,7 +21,7 @@ effort to teach myself web programming.  After college, I worked as a hybrid web
 developer and C++ developer for a company.  Then moved to Chicago with my wife, 
 where she found her dream job.
 
-I am a primary Linux user.  I made the full jump in 2010 to Ubuntu.  A year later,
+I am primarily a Linux user.  I made the full jump in 2010 to Ubuntu.  A year later,
 at the urging of a friend, I switched to Arch, which I have loved and used since.
 Now for some of the random things that come with being a big Linux user...  My
 window manager of choice (for now) is xmonad, even though I have been using subtle
