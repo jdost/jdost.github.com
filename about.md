@@ -14,7 +14,7 @@ whatever manner).  So a little about myself...
 I first started programming in my freshman year in college (in 2005), so I started
 **really** late.  I have been on a feverish sprint to catch up to all of my peers
 and seniors who got big head starts.  I started with C, in an intro to programming
-course, where I quickly accelled and decided on a career in software.  I then was
+course, where I quickly excelled and decided on a career in software.  I then was
 taught shell scripting (using `/bin/ksh`) and python.  The following year I learned
 OOP with C++ and Java.  During this time, I taught myself PHP and Javascript in an
 effort to teach myself web programming.  After college, I worked as a hybrid web
