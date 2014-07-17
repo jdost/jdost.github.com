@@ -9,6 +9,7 @@ url: http://jdost.github.io
 
 exclude: ["Makefile", "README.md", "github.conf", "s/less"]
 pygments: true
+markdown: kramdown
 
 disqus:
    enabled: true
