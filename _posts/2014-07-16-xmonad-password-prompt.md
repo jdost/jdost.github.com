@@ -38,7 +38,7 @@ outputs the clean password list.
 [1]: http://blog.tarn-vedra.de/2014/05/xmonad-loves-password-store.html
 [tutorial]: http://book.realworldhaskell.org/read/io-case-study-a-library-for-searching-the-filesystem.html
 
-{% highlight haskell linenos %}
+{% highlight haskell linenos linespans=files %}
 getFiles dir = do
   names <- getDirectoryContents dir
   let properNames = filter (`notElem` [ ".", "..", ".git" ]) names
@@ -60,7 +60,7 @@ getPasswords = do
 Then all that was left was using some of the utility functions to turn this list
 into a completion function and seed the custom prompt with it.
 
-{% highlight haskell linenos %}
+{% highlight haskell linenos linespans=prompt %}
 data Pass = Pass
 
 instance XPrompt Pass where
