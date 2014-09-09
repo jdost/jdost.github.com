@@ -1,5 +1,7 @@
 body {
   background: #f0f0f0;
+  width: 800px;
+  margin: 0 auto;
 }
 header {
   margin-top: 2em;
