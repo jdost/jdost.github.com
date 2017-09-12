@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/jdost
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://jdost.us
+  * I am jdost (https://keybase.io/jdost) on keybase.
+  * I have a public key ASCJHSOLyKHPsN2eky5KsfN7SccYh_17-tgqVLX3cleMQgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101a8ef39d3a4a3fa7e67055871bc11bfca3eb4d3bf86435970d3d0144faa12f9c60a",
+      "host": "keybase.io",
+      "kid": "0120891d238bc8a1cfb0dd9e932e4ab1f37b49c71887fd7bfad82a54b5f772578c420a",
+      "uid": "d4e28d4e33c8a022ac0740545ae64600",
+      "username": "jdost"
+    },
+    "merkle_root": {
+      "ctime": 1505187668,
+      "hash": "747b2d189dc3b20d02909cf93d3bf95686d2a21d17f744d529a66d6f5cb64da6ce6b50586f35b5fad69a305148c00a9e09816061e912589542ea7aa0b9b53999",
+      "hash_meta": "7373fcd4c1b09836ae12f63593765e5fcbdc2215f0a5b85672f69c7c344b1eeb",
+      "seqno": 1381516
+    },
+    "service": {
+      "hostname": "jdost.us",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.30"
+  },
+  "ctime": 1505187704,
+  "expire_in": 504576000,
+  "prev": "7bee201f40fcb7a368f661058942370e4257ec1ff77163d7edc2d7f9efb1d80e",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgiR0ji8ihz7DdnpMuSrHze0nHGIf9e/rYKlS193JXjEIKp3BheWxvYWTFAz17ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxYThlZjM5ZDNhNGEzZmE3ZTY3MDU1ODcxYmMxMWJmY2EzZWI0ZDNiZjg2NDM1OTcwZDNkMDE0NGZhYTEyZjljNjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwODkxZDIzOGJjOGExY2ZiMGRkOWU5MzJlNGFiMWYzN2I0OWM3MTg4N2ZkN2JmYWQ4MmE1NGI1Zjc3MjU3OGM0MjBhIiwidWlkIjoiZDRlMjhkNGUzM2M4YTAyMmFjMDc0MDU0NWFlNjQ2MDAiLCJ1c2VybmFtZSI6Impkb3N0In0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTA1MTg3NjY4LCJoYXNoIjoiNzQ3YjJkMTg5ZGMzYjIwZDAyOTA5Y2Y5M2QzYmY5NTY4NmQyYTIxZDE3Zjc0NGQ1MjlhNjZkNmY1Y2I2NGRhNmNlNmI1MDU4NmYzNWI1ZmFkNjlhMzA1MTQ4YzAwYTllMDk4MTYwNjFlOTEyNTg5NTQyZWE3YWEwYjliNTM5OTkiLCJoYXNoX21ldGEiOiI3MzczZmNkNGMxYjA5ODM2YWUxMmY2MzU5Mzc2NWU1ZmNiZGMyMjE1ZjBhNWI4NTY3MmY2OWM3YzM0NGIxZWViIiwic2Vxbm8iOjEzODE1MTZ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiamRvc3QudXMiLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjMwIn0sImN0aW1lIjoxNTA1MTg3NzA0LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjdiZWUyMDFmNDBmY2I3YTM2OGY2NjEwNTg5NDIzNzBlNDI1N2VjMWZmNzcxNjNkN2VkYzJkN2Y5ZWZiMWQ4MGUiLCJzZXFubyI6MTUsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA6tY40t9Q3nNyxrprFQUspHG8XCMiT/aI+GBMqLkodQpX4L+efGIB4QB8hBmv3/LKA4ez79dtwfUeZNRJLIs4CqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIL0bpp/K5inigQkJPRT7ONWlhKbmbNiDCKUkRZ+q9mtAo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jdost
+
+==================================================================
